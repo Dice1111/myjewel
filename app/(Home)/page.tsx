@@ -1,6 +1,7 @@
 import Explore from "./Explore";
 import Hero from "./Hero";
 import Services from "./Services";
+import Testimonials from "./Testimonials";
 import WhyChoose from "./WhyChoose";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Services />
       <WhyChoose />
       <Explore />
+      <Testimonials />
     </main>
   );
 }

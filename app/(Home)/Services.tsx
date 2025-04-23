@@ -62,9 +62,9 @@ const Services = () => {
                   <div className="flex gap-5">
                     <p>{service.id}</p>
                     <div className=" w-full">
-                      <h2 className="uppercase font-medium text-2xl">
+                      <h3 className="uppercase font-medium text-2xl">
                         {service.name}
-                      </h2>
+                      </h3>
                       <p className="border-b-1 pb-6 w-full">
                         {service.description}
                       </p>

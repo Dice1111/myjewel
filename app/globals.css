@@ -48,13 +48,7 @@
 
 }
 
-body {
-  font-family: "DM Sans", sans-serif;
-}
 
-h1 {
-  font-family: "Playfair Display", serif;
-}
 
 :root {
   --radius: 0.625rem;
@@ -95,6 +89,7 @@ h1 {
   --dark-blue: #15274B;
 }
 
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -102,11 +97,18 @@ h1 {
   body {
     @apply bg-background text-foreground;
     font-size: 20px;
+    font-family: "DM Sans", sans-serif;
   }
   h1{
     color: var(--dark-gray);
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
   }
   h2{
+    color: var(--dark-blue);
+    font-family: "Playfair Display", serif;
+  }
+  h3{
     color: var(--dark-text);
   }
   p{
