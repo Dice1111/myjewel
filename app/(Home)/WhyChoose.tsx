@@ -25,7 +25,7 @@ const InfoCardData = [
 
 const WhyChoose = () => {
   return (
-    <section className="container mx-auto flex justify-center items-center px-10 py-30 bg-[#FCFCFC] relative overflow-hidden">
+    <section className="flex justify-center items-center px-10 py-30 bg-[#FCFCFC] relative overflow-hidden">
       <div className="text-center space-y-10 z-50">
         <h1 className="text-[36px] text-dark-blue">Why Choose MyJewel?</h1>
         <div className="md:flex space-y-10 md:space-y-0 md:space-x-10">

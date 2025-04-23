@@ -41,7 +41,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="container mx-auto px-10">
+    <section className="container mx-auto px-10  py-10">
       <div className="relative">
         <BreadCrumbSeparator page_name={"Custom Jewelry"} address={"#"} />
         <div className=" justify-between sm:flex space-y-10">
