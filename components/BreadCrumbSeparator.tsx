@@ -10,12 +10,12 @@ import {
 
 import React from "react";
 
-interface Props {
+interface breadCrumbProps {
   page_name: string;
   address: string;
 }
 
-const BreadCrumbSeparator = ({ page_name, address }: Props) => {
+const BreadCrumbSeparator = ({ page_name, address }: breadCrumbProps) => {
   return (
     <Breadcrumb>
       <BreadcrumbList>

@@ -41,7 +41,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="container mx-auto pt-10 px-10">
+    <section className="container mx-auto px-10">
       <div className="relative">
         <BreadCrumbSeparator page_name={"Custom Jewelry"} address={"#"} />
         <div className=" justify-between sm:flex space-y-10">
@@ -62,7 +62,9 @@ const Services = () => {
                   <div className="flex gap-5">
                     <p>{service.id}</p>
                     <div className=" w-full">
-                      <h2>{service.name}</h2>
+                      <h2 className="uppercase font-medium text-2xl">
+                        {service.name}
+                      </h2>
                       <p className="border-b-1 pb-6 w-full">
                         {service.description}
                       </p>
@@ -74,8 +76,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="sm:absolute sm:bottom-30 sm:left-0 ">
-          <div className="w-[300px] relative">
+        <div className="relative sm:absolute sm:bottom-0 sm:left-0  w-[400px] h-[500px]">
+          <div className="w-[300px] absolute top-0 left-0 ">
             <Image
               src="/images/small_ring.jpg"
               alt="services"
@@ -83,15 +85,15 @@ const Services = () => {
               width={1920}
               height={1080}
             />
-            <div className="w-[200px] absolute -bottom-30 -right-30 p-1 bg-white">
-              <Image
-                src="/images/small_ring.jpg"
-                alt="services"
-                className="w-full h-auto"
-                width={1920}
-                height={1080}
-              />
-            </div>
+          </div>
+          <div className="w-[200px] absolute bottom-0 right-0 p-1 bg-white">
+            <Image
+              src="/images/gold_ring.jpg"
+              alt="services"
+              className="w-full h-auto"
+              width={1920}
+              height={1080}
+            />
           </div>
         </div>
       </div>
