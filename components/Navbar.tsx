@@ -26,11 +26,11 @@ const gift_links = [
 
 const Navbar = () => {
   return (
-    <nav className="z-50">
-      <div className="border-b-1">
+    <nav className="z-50 ">
+      <div className="border-b-1 text-[11px]">
         <div className="container mx-auto flex justify-between h-[35px] ">
           <div className="flex items-center">
-            <HiOutlineCalendarDays size={25} className="cursor-pointer" />
+            <HiOutlineCalendarDays size={22} className="cursor-pointer" />
             <span className="font-[10px] uppercase">Book an appointment</span>
           </div>
           <div className="capitalize flex items-center gap-1">
@@ -41,13 +41,13 @@ const Navbar = () => {
             <div className="rounded-full w-1 h-1 bg-black"></div>
           </div>
           <div className="flex items-center gap-5">
-            <HiOutlineUserCircle size={25} className="cursor-pointer" />
-            <FaRegHeart size={25} className="cursor-pointer" />
-            <IoBagOutline size={25} className="cursor-pointer" />
+            <HiOutlineUserCircle size={22} className="cursor-pointer" />
+            <FaRegHeart size={22} className="cursor-pointer" />
+            <IoBagOutline size={22} className="cursor-pointer" />
           </div>
         </div>
       </div>
-      <div className="border-b-1">
+      <div className="border-b-1 text-[13px]">
         <div className="container mx-auto flex justify-between h-20 items-center">
           <div className=" h-full flex items-center px-20 border-r-1">
             <h1 className="text-4xl">MyJewel</h1>
