@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-[#F0F0F0] h-[60dvh] flex justify-center items-center relative overflow-hidden">
+    <section className="w-full bg-[#F0F0F0] h-[60dvh] flex justify-center items-center relative overflow-hidden text-center px-10">
       {/* Center Letter  */}
       <div className="flex flex-col gap-5 justify-center items-center z-10">
         <h1 className="text-5xl">Custom Jewelry</h1>
