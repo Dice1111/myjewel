@@ -1,5 +1,3 @@
-import { Slash } from "lucide-react";
-
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -7,8 +5,6 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-
-import React from "react";
 
 interface breadCrumbProps {
   page_name: string;

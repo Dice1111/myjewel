@@ -41,7 +41,9 @@ const CarouselComponent = ({ testimonials }: carouselProps) => {
               />
               <h3 className="font-semibold">{item.name}</h3>
               <p className="text-sm text-gray-500 mb-3">{item.title}</p>
-              <p className="text-sm text-gray-700 italic">"{item.message}"</p>
+              <p className="text-sm text-gray-700 italic">
+                &quot;{item.message}&quot;
+              </p>
             </div>
           </CarouselItem>
         ))}

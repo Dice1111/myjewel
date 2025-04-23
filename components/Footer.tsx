@@ -1,7 +1,9 @@
-import React from "react";
 import Link from "next/link";
-import { VscSend } from "react-icons/vsc";
-import { Button } from "./ui/button";
+import { FaApplePay } from "react-icons/fa";
+import { GrAmex } from "react-icons/gr";
+import { LiaFacebook, LiaInstagram } from "react-icons/lia";
+import { RiVisaFill } from "react-icons/ri";
+import { SiMastercard } from "react-icons/si";
 import ProfileForm from "./ProfileForm";
 
 // Arrays for different sections
@@ -31,13 +33,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         {/* Contact Section */}
         <div className="mb-8 md:mb-0">
-          <h3 className="text-lg font-semibold mb-4">CONTACT US</h3>
+          <p className="text-md font-semibold mb-4">CONTACT US</p>
           <ul className="space-y-2">
             {contactLinks.map((item) => (
               <li key={item}>
                 <Link
                   href="#"
-                  className="hover:text-gray-300 transition-colors"
+                  className="hover:text-gray-300 transition-colors text-sm"
                 >
                   {item}
                 </Link>
@@ -48,13 +50,13 @@ const Footer = () => {
 
         {/* Gifting Section */}
         <div className="mb-8 md:mb-0">
-          <h3 className="text-lg font-semibold mb-4">THE ART OF GIFTING</h3>
+          <p className="text-md font-semibold mb-4">THE ART OF GIFTING</p>
           <ul className="space-y-2">
             {giftingLinks.map((item) => (
               <li key={item}>
                 <Link
                   href="#"
-                  className="hover:text-gray-300 transition-colors"
+                  className="hover:text-gray-300 transition-colors text-sm"
                 >
                   {item}
                 </Link>
@@ -65,13 +67,13 @@ const Footer = () => {
 
         {/* Services Section */}
         <div className="mb-8 md:mb-0">
-          <h3 className="text-lg font-semibold mb-4">BESPOKE & SERVICES</h3>
+          <p className="text-md font-semibold mb-4">BESPOKE & SERVICES</p>
           <ul className="space-y-2">
             {servicesLinks.map((item) => (
               <li key={item}>
                 <Link
                   href="#"
-                  className="hover:text-gray-300 transition-colors"
+                  className="hover:text-gray-300 transition-colors text-sm"
                 >
                   {item}
                 </Link>
@@ -82,16 +84,24 @@ const Footer = () => {
 
         {/* Newsletter Section */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Let’s Keep in Touch</h3>
+          <p className="text-md font-semibold mb-4">Let’s Keep in Touch</p>
           <ProfileForm />
 
           <div className="mt-6">
             <h4 className="font-semibold mb-2">Payment Methods</h4>
             <div className="flex space-x-4">
-              <span className="bg-white text-black px-3 py-1 rounded">
-                VISA
-              </span>
-              <span className="bg-white text-black px-3 py-1 rounded">Pay</span>
+              <div className="bg-white text-black px-3 py-1 rounded border-1">
+                <RiVisaFill size={30} />
+              </div>
+              <div className="bg-white text-black px-3 py-1 rounded border-1">
+                <SiMastercard size={30} />
+              </div>
+              <div className="bg-white text-black px-3 py-1 rounded border-1">
+                <GrAmex size={30} />
+              </div>
+              <div className="bg-white text-black px-3 py-1 rounded border-1">
+                <FaApplePay size={30} />
+              </div>
             </div>
           </div>
         </div>
@@ -99,10 +109,10 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="max-w-7xl mx-auto border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0 text-center md:text-left">
+        <div className="mb-4 md:mb-0 text-center md:text-left text-sm">
           © 2025, All Rights Reserved – MyJewel
         </div>
-        <div className="flex space-x-6">
+        <div className="flex space-x-6 text-sm">
           <Link href="#" className="hover:text-gray-300 transition-colors">
             Terms & Conditions
           </Link>
@@ -110,7 +120,13 @@ const Footer = () => {
             Privacy Policy
           </Link>
           <Link href="#" className="hover:text-gray-300 transition-colors">
-            Live Mail
+            Site Mail
+          </Link>
+          <Link href="#" className="hover:text-gray-300 transition-colors">
+            <LiaFacebook size={25} />
+          </Link>
+          <Link href="#" className="hover:text-gray-300 transition-colors">
+            <LiaInstagram size={25} />
           </Link>
         </div>
       </div>
