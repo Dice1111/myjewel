@@ -26,7 +26,7 @@ const gift_links = [
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="z-50">
       <div className="border-b-1">
         <div className="container mx-auto flex justify-between h-[35px] ">
           <div className="flex items-center">
